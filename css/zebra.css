@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    color: #333; 
+    font-family: 'Roboto', sans-serif;
+    padding-top: 66px;
+}
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(250, 250, 250, 0.8);
+    border-bottom: 2px solid #ccc;
+    height: 66px;
+    width: 100%; 
+}
+
+nav ul {
+	float: right;
+}
+nav li {
+    float: left;
+    width: auto;
+}
+nav li a {
+    padding: 25px 10px;
+    display: block;
+    text-decoration: none;
+    color: #083c8e;
+}
+nav li a:hover {
+    background: #eeeeee;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px grey;
+}
+
+#brand {
+    text-indent: -9000px;
+    background: url(http://www.stephwasser.com/favicon.ico) no-repeat top left;
+    background-size: 45px;
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin: 10px
+} 
+
+.container {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+#poop h3 {
+    color:#0343aa;
+}
+
+#hero {
+    background: #023f87;
+    text-align: center;
+    color: #fafafa;
+    background-size: cover;
+    height: 350px;
+    padding: 25px 0;
+}
+
+#hero img {
+    width: 150px; 
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#hero h2 {
+    font-size: 400%;
+    margin: 20px;
+}
+
+#hero span {
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    color: white;
+    text-shadow: 2px 2px 4px grey;
+}
+
+#main-content{
+    text-align: center;
+    padding: 25px 10px;
+    overflow: hidden;
+}
+
+#main-content h3{
+    font-size: 250%;
+    margin: 20px 0;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+.column img {
+    width: 70%;
+    max-width: 70%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+}
+
+.column h4 {
+    color: #083c8e;
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+.column .btn {
+    border: 2px solid #083c8e;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #083c8e;
+    
+}
+
+.column .btn:hover {
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #ffffff;
+    
+    background-color: #083c8e;
+}
+
+
+#social {
+    background: #083c8e;
+    color: #fafafa;
+    padding: 25px 0;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#social ul {
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+#social li {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+}
+#social ul li img
+{
+    margin: 20px;
+}
+footer
+{
+    width: 100%;
+    border:border-box;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 901px)
+{
+    .column {
+        padding: 10px;
+    }
+    #hero h2 {
+        font-size: 200%;
+    }
+    #main-content h3{
+        font-size: 150%;
+    }   
+}
+
+
+@media only screen and (max-width: 640px)
+{
+    .column {
+        float: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0 0 40px 0;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
