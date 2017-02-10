@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Arimo:700|Libre+Franklin:500,600|Pontano+Sans');
 
 body {
     color: #333; 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     padding-top: 66px;
 }
     nav {
@@ -16,19 +16,22 @@ body {
 }
 
 nav ul {
-	float: right;
+	display: none;
+    float: right;
 }
 nav li {
+    display: none;
     float: left;
     width: auto;
 }
 nav li a {
     padding: 25px 10px;
-    display: block;
+    display: none;
     text-decoration: none;
     color: #083c8e;
 }
 nav li a:hover {
+    display: none;
     background: #eeeeee;
 }
 
@@ -37,19 +40,19 @@ h2 {
     text-shadow: 2px 2px 4px grey;
 }
 
-#brand {
-    text-indent: -9000px;
-    background: url(http://www.stephwasser.com/favicon.ico) no-repeat top left;
-    background-size: 45px;
+#logo {
+    height: 66px;
+}
+#brand img{
+    float: right;
+    margin: 10px;
     height: 45px;
     width: 45px;
-    float: left;
-    margin: 10px
 } 
 
 .container {
     width: 100%; 
-    margin: 0 auto;
+    margin: auto;
 }
 
 #poop h3 {
@@ -58,7 +61,6 @@ h2 {
 
 #hero {
     background: #023f87;
-    text-align: center;
     color: #fafafa;
     background-size: cover;
     height: 350px;
@@ -66,13 +68,14 @@ h2 {
 }
 
 #hero img {
+    display: none;
     width: 150px; 
-    border-radius: 50%;
     margin-top: 20px;
 }
 #hero h2 {
     font-size: 400%;
     margin: 20px;
+    padding-top: 145px;
 }
 
 #hero span {
@@ -85,8 +88,7 @@ h2 {
 }
 
 #main-content{
-    text-align: center;
-    padding: 25px 10px;
+    padding: 25px;
     overflow: hidden;
 }
 
@@ -100,9 +102,7 @@ h2 {
     padding: 15px;
 }
 .column img {
-    width: 70%;
-    max-width: 70%;
-    border-radius: 50%;
+    width: 100%;
     margin-bottom: 20px;
     box-shadow: 2px 2px 6px rgba(0,0,0,.2);
 }
@@ -130,7 +130,6 @@ h2 {
     font-size: 150%;
     text-decoration: none;
     color: #ffffff;
-    
     background-color: #083c8e;
 }
 
@@ -182,16 +181,102 @@ footer
     .column {
         padding: 10px;
     }
-    #hero h2 {
+    #hero h2 span {
         font-size: 200%;
     }
     #main-content h3{
         font-size: 150%;
-    }   
+    } 
+
 }
 
+/* iphone 6s or smaller */
+@media only screen and (max-device-width: 667px)
+{
+    .column {
+        float: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0 0 40px 0;
+    } 
+    
+    #hero h2{
+        font-size: 600%;
+        padding: 10px;
+        margin-top: 200px;
+    }
 
-@media only screen and (max-width: 640px)
+    #hero span{
+        font-size: 300%;
+        padding: 35px;
+    }
+
+    #hero {
+        height: 525px;
+        width: 100%;
+    }
+    #hero img {
+        float: none;
+        width: 35%;
+        font-size: 100%;
+        padding: 10px;
+    }
+    .column .btn {
+        font-size: 300%;
+        margin-top: 30px;
+        border: 3px solid #083c8e;
+        padding: 20px 30px;
+    }
+
+    .column .btn:hover {
+    padding: 20px 30px;
+    margin-top: 30px;
+    font-size: 300%;
+}
+#poop h3 {
+    font-size: 300%;
+    padding-bottom: 20px
+}
+body {
+    padding-top: 100px;
+}
+    nav {
+    border-bottom: 3px solid #ccc;
+    height: 100px;
+    width: 100%; 
+}
+
+nav ul {
+    display: none;
+    font-size: 125%;
+}
+nav li {
+    display: none;
+    font-size: 125%;
+}
+nav li a {
+    display: none;
+    padding: 35px 20px;
+    font-size: 125%;
+}
+#brand img{
+    height: 55px;
+    width: 55px;
+    float: right;
+    margin: 25px
+}
+
+#logo {
+    float: left;
+    height: 75px;
+    margin: 20px;
+}
+    /*#main-content h3{
+        font-size: 500%;
+    } */
+}
+
+@media only screen and (max-width: 667px)
 {
     .column {
         float: none;
@@ -200,10 +285,6 @@ footer
         margin: 0 0 40px 0;
     } 
 }
-
-
-
-
 
 
 
